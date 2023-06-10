@@ -4,8 +4,8 @@ fetch("https://fakestoreapi.com/products").then((data)=>{
     let tableData=" ";
     objectData.map((value)=>{
         tableData+=  `
-        <div class="col">
-            <div class="card">
+        <div class="col-md-3 col-sm-6">
+            <div class="card m-0 p-0">
                 <img src="${value.image}" class="card-img-top img-fluid" alt="${value.title}">
                 <div class="card-body">
                     <h5 class="card-title">${value.title}</h5>
