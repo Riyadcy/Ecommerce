@@ -10,13 +10,14 @@ fetch("https://fakestoreapi.com/products").then((data)=>{
                 <div class="card-body">
                     <h5 class="card-title">${value.title}</h5>
                     <p class="card-text">${value.description}</p>
-                    <span>${value.price}</span>
-                    <a href="#" class="btn btn-primary">Buy it</a>
+                    <span>$${value.price}</span>
+                    <a href="./product.html?id=${value.id}"  class="btn btn-primary">Buy it</a>
                 </div>
             </div>
         </div>`;
     })
     document.getElementById("cards").innerHTML=tableData;
+    
 })
     
 
